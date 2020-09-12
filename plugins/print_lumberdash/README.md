@@ -10,7 +10,7 @@ Add `print_lumberdash` to your dependencies.
 
 ```dart
 import 'package:lumberdash/lumberdash.dart';
-import 'package:sentry_lumberdash/sentry_lumberdash.dart';
+import 'package:print_lumberdash/print_lumberdash.dart';
 
 void main() {
   putLumberdashToWork(
