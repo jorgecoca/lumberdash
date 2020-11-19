@@ -54,7 +54,7 @@ class FirebaseLumberdash extends LumberdashClient {
   void logError(dynamic exception, [dynamic stacktrace]) {
     firebaseAnalyticsClient.logEvent(
       name: exception?.toString() ?? 'firebase_lumberdash_error',
-      parameters: _buildParameters('ERROR', {'stacktrace': stacktrace}),
+      parameters: _buildParameters('ERROR', {'stacktrace': stacktrace.toString()}),
     );
   }
 
